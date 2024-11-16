@@ -14,7 +14,7 @@ export const Header = () => {
          <NavLink to='/cart' className='link' >Cart</NavLink>
       </nav>
       <Link to='/cart' className="items">
-         <span>Cart: </span>
+         <span>Cart:  </span>
       </Link>
     </header>
   )
