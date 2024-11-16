@@ -1,7 +1,11 @@
-
+import { CartCard } from "../components"
 export const Cart = () => {
   return (
-    <div>Cart</div>
+    <main>
+      <section className="cartcard">
+         <CartCard/>
+      </section>
+    </main>
   )
 }
 
