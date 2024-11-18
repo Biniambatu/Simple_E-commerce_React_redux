@@ -1,4 +1,9 @@
+import { useEffect } from "react"
+export const useTitle = (title:any) => {
 
-export const useTitle = () => {
+  useEffect(() => {
+    document.title = `${title} | Shopping Cart`
+  },[title])
+
   return null
 }
