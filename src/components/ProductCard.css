@@ -48,7 +48,13 @@
 
   .productCard .remove {
     background-color: #ac0d14;
+    width: 110px;
+    height: 35px;
   }
   .productCard .remove:hover{
     background-color: #8e090f;
+  }
+
+  .productCard_image:hover{
+    cursor: pointer;
   }
