@@ -14,6 +14,7 @@ const Photo = () => {
   },[])
   return (
     <div>
+      <h1>Photo list</h1>
         {users.map(user => (<PhotoList key={user.id} user={user}/>)  )} 
     </div>
   )
