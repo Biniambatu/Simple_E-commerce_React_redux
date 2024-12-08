@@ -9,11 +9,13 @@ const PhotoCartSlice = createSlice({
     reducers: {
         add_to_cart(state, action){
            const updatedPhotoCart = state.PhotoCartList.concat(action.payload)
-           const updatedTotal = state.totalPhoto + action.payload.id
+           const updatedTotal = state.totalPhoto + action.payload.albumId
            return {...state, PhotoCartList: updatedPhotoCart, totalPhoto: updatedTotal}
         },
         remove_from_cart(state, action){
-
+           const updatedCartList = state.PhotoCartList.filter(item => item.id !== action.payload.id)
+           const updatedTotal = state.totalPhoto - action.payload.albumId
+           return {...state, PhotoCartList: updatedCartList, totalPhoto:updatedTotal}
         }
     }
 })
