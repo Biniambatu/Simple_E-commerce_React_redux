@@ -16,7 +16,7 @@ const PhotoCart = () => {
               <p className="productPrice">$ price </p>
               <button onClick={() => dispatch(remove_from_cart(list))}>Remove</button>
             </div>
-   ) )}
+      ) )}
        </div> 
   )
 }
