@@ -5,6 +5,8 @@ import ProductDetail from "../components/ProductDetail"
 import Photo from "../pages/Photo"
 import PhotoCart from "../components/PhotoCart"
 import Search from "../pages/Search"
+import Menu from "../components/Menu/Menu"
+import MenuCart from "../components/Menu/MenuCart"
 
 export const AllRoutes = () => {
   return (
@@ -16,6 +18,11 @@ export const AllRoutes = () => {
         <Route path="/photoCart" element={<PhotoCart/>} ></Route>
         <Route path="/productDetail/:id" element={<ProductDetail/>}></Route>
         <Route path="/search" element={<Search  />} />
+        
+        <Route path="/menu" element={<Menu/>}></Route>
+        <Route path="/menuCart" element={<MenuCart />} />
+
+
       </Routes>
     </>
   )

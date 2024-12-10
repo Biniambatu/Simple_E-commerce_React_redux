@@ -22,6 +22,10 @@ export const Header = () => {
          <NavLink to='/cart' className='link' >Cart</NavLink>
          <NavLink to='/photo' className='link' >Photo</NavLink>
          <NavLink to='/photoCart' className='link' >PhotoCart</NavLink>
+        
+         <NavLink to='/menu' className='link' >Menu</NavLink>
+         <NavLink to='/menuCart' className='link' >MenuCart</NavLink>
+         
       </nav>
         <input type="text" placeholder="Search"  onChange={(e)=> setsearch(e.target.value)} />
         <button onClick={handleSearch}>Search</button>

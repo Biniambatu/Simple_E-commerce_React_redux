@@ -36,12 +36,9 @@ export const ProductCard = ({ product }: any) => {
           </button>
         ) : (
           <button  onClick={() => dispatch(add(product))}>Add to Cart</button>
-          
         )}
       </div>        
-
     </div>      
-    
 </>
   );
 };
