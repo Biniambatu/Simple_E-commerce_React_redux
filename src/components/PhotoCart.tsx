@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
 import { remove_from_cart } from "../store/PhotoCartSlice"
-
+import '../components/ProductCard.css'
 
 
 const PhotoCart = () => {

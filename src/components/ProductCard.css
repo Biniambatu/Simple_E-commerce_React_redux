@@ -1,4 +1,4 @@
-.productCard{
+/* .productCard{
     width: 350px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 5px;
@@ -57,4 +57,96 @@
 
   .productCard_image:hover{
     cursor: pointer;
-  }
+  } */
+  .productCard {
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px, rgba(0, 0, 0, 0.1) 0px 1px 3px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #ffffff, #f7f7f7);
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 10px, rgba(0, 0, 0, 0.15) 0px 3px 5px;
+}
+
+.productCard img {
+    max-width: 100%;
+    height: 250px;
+    margin: 15px 0px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.productCard .name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0px;
+}
+
+.productCard p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.5;
+}
+
+.productCard .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
+} 
+
+.productCard button {
+    /* border: 0px;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #1207aa;
+    background: linear-gradient(135deg, #ae2d1c, #801010); 
+    padding: 10px 15px;
+    cursor: pointer;
+    */
+
+      border: 0px;
+      border-radius: 25px;
+      font-size: 16px;
+      color: #FFFFFF;
+      background-color: #1C59AE;
+      padding: 10px 15px;
+      cursor: pointer;
+      max-width: 150px;
+      transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.productCard button:hover {
+    /* background: linear-gradient(135deg, #cbc8e0, #93b2dd); */
+    transform: scale(1.20);
+}
+
+.productCard .remove {
+    background-color: #ac0d14;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.productCard .remove:hover {
+    background-color: #8e090f;
+    transform: scale(1.20);
+}
+
+.productCard_image:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}

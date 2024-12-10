@@ -1,6 +1,7 @@
 
 import { add_to_cart,remove_from_cart } from '../store/PhotoCartSlice';
 import { useDispatch } from 'react-redux';
+import '../components/ProductCard.css'
 
 const PhotoList = ({user}:any) => {
   const {url,  title} = user;

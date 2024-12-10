@@ -8,9 +8,9 @@ export const Header = () => {
   const navigate = useNavigate()
   const cartList = useSelector(state => state.cartState.cartList)
   const [search, setsearch] = useState("")
-  const handleSearch = () => {
-    navigate("/search", { state: { query: search } });
-  }
+  // const handleSearch = () => {
+  //   navigate("/search", { state: { query: search } });
+  // }
   return (
     <header>
       <Link to='/' className="logo">
@@ -27,8 +27,11 @@ export const Header = () => {
          <NavLink to='/menuCart' className='link' >MenuCart</NavLink>
          
       </nav>
-        <input type="text" placeholder="Search"  onChange={(e)=> setsearch(e.target.value)} />
-        <button onClick={handleSearch}>Search</button>
+      <form className="search">
+        <input className="input" type="text" placeholder="Search"  onChange={(e)=> setsearch(e.target.value)} />
+        {/* <button className="buttonsearch" onClick={handleSearch}>Search</button> */}
+      </form>
+      
       <Link to='/cart' className="items">
          <span>Cart: {cartList.length}  </span>
       </Link>
