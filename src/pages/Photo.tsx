@@ -1,6 +1,7 @@
 import axios from 'axios';
 import  { useEffect, useState } from 'react'
 import PhotoList from '../components/PhotoList'
+
 const Photo = () => {
     interface User{
         albumId: number;
@@ -20,8 +21,9 @@ const Photo = () => {
   
   return (
     <div>
-      <h1>Photo list</h1>
+        <section className="products">
         {users.map(user => (<PhotoList key={user.id} user={user}/>)  )} 
+        </section>
     </div>
   )
 }

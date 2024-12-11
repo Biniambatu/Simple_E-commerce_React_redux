@@ -20,11 +20,11 @@ export const Header = () => {
       <nav className="navigation">
          <NavLink to='/' className='link' >Home</NavLink>
          <NavLink to='/cart' className='link' >Cart</NavLink>
-         <NavLink to='/photo' className='link' >Photo</NavLink>
+         {/* <NavLink to='/photo' className='link' >Photo</NavLink> */}
          <NavLink to='/photoCart' className='link' >PhotoCart</NavLink>
         
-         <NavLink to='/menu' className='link' >Menu</NavLink>
-         <NavLink to='/menuCart' className='link' >MenuCart</NavLink>
+         {/* <NavLink to='/menu' className='link' >Menu</NavLink> */}
+         <NavLink to='/menuCart' className='link' >ClothingCart </NavLink>
          
       </nav>
       <form className="search">

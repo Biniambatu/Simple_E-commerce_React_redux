@@ -1,4 +1,6 @@
+import { NavLink, useNavigate } from "react-router-dom";
 import { ProductCard } from "../components";
+import Header2 from "../components/Header2";
 
 export const products = [
   {
@@ -44,9 +46,14 @@ export const products = [
     description: "It is a website of Video Game Discovery that can insert , update delete and also modify contents(cards) by using React JS framework."
   },
 ];
+
 export const Home = () => {
+  
+  const navigate = useNavigate()
+  
   return (
     <main>
+     
       <section className="products">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
